@@ -32,3 +32,5 @@ dist/
 
 *.log
 .DS_Store
+
+/src/data/dump/
