@@ -1,16 +1,32 @@
-# React + Vite
+﻿# Songletter
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A music discovery app built with React and Vite. Connect Spotify to get 10 song recommendations based on your top artists and Last.fm tags.
 
-Currently, two official plugins are available:
+V1 builds a taste profile from artist tags, then ranks a fixed candidate dataset by summing matching tag weights.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Run locally
 
-## React Compiler
+1. Install dependencies from this folder:
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+   ```sh
+   npm install
+   ```
 
-## Expanding the ESLint configuration
+2. Create a `.env` file with your API credentials:
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+   ```dotenv
+   VITE_SPOTIFY_CLIENT_ID=your_spotify_client_id
+   VITE_LASTFM_API_KEY=your_lastfm_api_key
+   ```
+
+3. Register `http://127.0.0.1:5173/callback` as the redirect URI in your Spotify app settings.
+
+4. Start the app:
+
+   ```sh
+   npm run dev -- --host 127.0.0.1 --port 5173 --strictPort
+   ```
+
+   Open `http://127.0.0.1:5173` and click **Connect Spotify**.
+
+Run `npm run build` for a production build or `npm run lint` to check the code.
