@@ -1,0 +1,772 @@
+[
+  {
+    "spotifyTrackId": "1yQULu3hkQsUIO2ZdHOJ30",
+    "trackName": "Cry",
+    "artistName": "Billy Cobb",
+    "spotifyUrl": "https://open.spotify.com/track/1yQULu3hkQsUIO2ZdHOJ30",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273911941f3a85eb617af7d5112"
+  },
+  {
+    "spotifyTrackId": "6lTNUSr9Hb6llU8bE6VWtF",
+    "trackName": "Put It Off",
+    "artistName": "Billy Cobb",
+    "spotifyUrl": "https://open.spotify.com/track/6lTNUSr9Hb6llU8bE6VWtF",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273911941f3a85eb617af7d5112"
+  },
+  {
+    "spotifyTrackId": "6PhZieI6augDmGNib7KLJw",
+    "trackName": "What's Your Favorite Fish?",
+    "artistName": "Billy Cobb",
+    "spotifyUrl": "https://open.spotify.com/track/6PhZieI6augDmGNib7KLJw",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273911941f3a85eb617af7d5112"
+  },
+  {
+    "spotifyTrackId": "5zdkOPbxAslkETYjKjZ1kd",
+    "trackName": "The Hole In The Wall",
+    "artistName": "Billy Cobb",
+    "spotifyUrl": "https://open.spotify.com/track/5zdkOPbxAslkETYjKjZ1kd",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273911941f3a85eb617af7d5112"
+  },
+  {
+    "spotifyTrackId": "0ryRcw0ApAx86imXLXbEO1",
+    "trackName": "Time To Let It Go",
+    "artistName": "Billy Cobb",
+    "spotifyUrl": "https://open.spotify.com/track/0ryRcw0ApAx86imXLXbEO1",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273911941f3a85eb617af7d5112"
+  },
+  {
+    "spotifyTrackId": "4m9uyukaB0AEC5BKZb5Svw",
+    "trackName": "I Could Get Used To This",
+    "artistName": "Jessie Ware",
+    "spotifyUrl": "https://open.spotify.com/track/4m9uyukaB0AEC5BKZb5Svw",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a24ef13fff59582d2676f051"
+  },
+  {
+    "spotifyTrackId": "6b9OaVk0TxWsHMH0OjWLMO",
+    "trackName": "Sexy For Me",
+    "artistName": "Jason Derulo",
+    "spotifyUrl": "https://open.spotify.com/track/6b9OaVk0TxWsHMH0OjWLMO",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273aa798b71b0468714bd0db131"
+  },
+  {
+    "spotifyTrackId": "1c2ArpI0RmBOk62Tf81xLI",
+    "trackName": "Last of a Dying Breed",
+    "artistName": "Joji",
+    "spotifyUrl": "https://open.spotify.com/track/1c2ArpI0RmBOk62Tf81xLI",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735c3a038bab97002062174b2b"
+  },
+  {
+    "spotifyTrackId": "7HXzuAd8UNJj2yCAS0NWbB",
+    "trackName": "Opening Night",
+    "artistName": "Arctic Monkeys",
+    "spotifyUrl": "https://open.spotify.com/track/7HXzuAd8UNJj2yCAS0NWbB",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733108aff1eaaa02a9d27a2a99"
+  },
+  {
+    "spotifyTrackId": "2DcJRwVK6Qlk3h6lXWQvE4",
+    "trackName": "Dead End",
+    "artistName": "Snail Mail",
+    "spotifyUrl": "https://open.spotify.com/track/2DcJRwVK6Qlk3h6lXWQvE4",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739f679e2bb05d0af50c85cf36"
+  },
+  {
+    "spotifyTrackId": "7z37xqq3y94KyVl7VWB88x",
+    "trackName": "We Were Never the Same",
+    "artistName": "Converge",
+    "spotifyUrl": "https://open.spotify.com/track/7z37xqq3y94KyVl7VWB88x",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735a4bf51c0db004a4510407f1"
+  },
+  {
+    "spotifyTrackId": "0AJXfM7qZFO5gXZcf4ck0M",
+    "trackName": "Sour Candy",
+    "artistName": "T.A.M",
+    "spotifyUrl": "https://open.spotify.com/track/0AJXfM7qZFO5gXZcf4ck0M",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d24423ec5166439e87d33569"
+  },
+  {
+    "spotifyTrackId": "4hEIjVe4S6EZJtdZqODBlC",
+    "trackName": "Cold",
+    "artistName": "After",
+    "spotifyUrl": "https://open.spotify.com/track/4hEIjVe4S6EZJtdZqODBlC",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f6aac55f110594af51f6168e"
+  },
+  {
+    "spotifyTrackId": "7tICCrK3CcyRFKza7yrR0z",
+    "trackName": "Homewrecker",
+    "artistName": "sombr",
+    "spotifyUrl": "https://open.spotify.com/track/7tICCrK3CcyRFKza7yrR0z",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2739a8d41dca4c7d0ef23d76dd7"
+  },
+  {
+    "spotifyTrackId": "5yvVYFDUpbnjcnRBgjwTzM",
+    "trackName": "Dracula (with JENNIE)",
+    "artistName": "Tame Impala",
+    "spotifyUrl": "https://open.spotify.com/track/5yvVYFDUpbnjcnRBgjwTzM",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c7c031ce9d06b131f8563676"
+  },
+  {
+    "spotifyTrackId": "1d3UgMKbD1uXObVVmLy44o",
+    "trackName": "Slave to the Rithm",
+    "artistName": "ILLENIUM",
+    "spotifyUrl": "https://open.spotify.com/track/1d3UgMKbD1uXObVVmLy44o",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f0538671e515ef783b91dfb7"
+  },
+  {
+    "spotifyTrackId": "12bYYQaLqHliSXvRIYlq8G",
+    "trackName": "I Just Might",
+    "artistName": "Bruno Mars",
+    "spotifyUrl": "https://open.spotify.com/track/12bYYQaLqHliSXvRIYlq8G",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e7623a0a60f330ee2b24d498"
+  },
+  {
+    "spotifyTrackId": "4jfzIzQiUabe8PDNo0O66j",
+    "trackName": "Hive Mind (feat. Denzel Curry)",
+    "artistName": "Knocked Loose",
+    "spotifyUrl": "https://open.spotify.com/track/4jfzIzQiUabe8PDNo0O66j",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b0f2d071d2ee5965c435f83b"
+  },
+  {
+    "spotifyTrackId": "23iKYWszFScsU02y1HJb92",
+    "trackName": "START OVER",
+    "artistName": "Tiffany Day",
+    "spotifyUrl": "https://open.spotify.com/track/23iKYWszFScsU02y1HJb92",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730162373b7076d62e17883336"
+  },
+  {
+    "spotifyTrackId": "5VsBTV8gxbMCRTomd2nRqg",
+    "trackName": "In a Lake",
+    "artistName": "Mitski",
+    "spotifyUrl": "https://open.spotify.com/track/5VsBTV8gxbMCRTomd2nRqg",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273be1cdc30c83c5822adac15a9"
+  },
+  {
+    "spotifyTrackId": "6CAb8TuA5yvfXoNWCUZdgh",
+    "trackName": "Cats",
+    "artistName": "Mitski",
+    "spotifyUrl": "https://open.spotify.com/track/6CAb8TuA5yvfXoNWCUZdgh",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273be1cdc30c83c5822adac15a9"
+  },
+  {
+    "spotifyTrackId": "1QD7a9ciI9Am84WGZeEtHh",
+    "trackName": "Instead of Here",
+    "artistName": "Mitski",
+    "spotifyUrl": "https://open.spotify.com/track/1QD7a9ciI9Am84WGZeEtHh",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273be1cdc30c83c5822adac15a9"
+  },
+  {
+    "spotifyTrackId": "0MRooJn2J6iXQnzFdFSpRR",
+    "trackName": "I'll Change for You",
+    "artistName": "Mitski",
+    "spotifyUrl": "https://open.spotify.com/track/0MRooJn2J6iXQnzFdFSpRR",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273be1cdc30c83c5822adac15a9"
+  },
+  {
+    "spotifyTrackId": "4EhIu2gv9GD0oamkGTcW7t",
+    "trackName": "Kxrma",
+    "artistName": "Last Dinosaurs",
+    "spotifyUrl": "https://open.spotify.com/track/4EhIu2gv9GD0oamkGTcW7t",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27348c9028d11f1c91f22360cb4"
+  },
+  {
+    "spotifyTrackId": "5qx8TsqN6IlVy3hTWnOBkq",
+    "trackName": "Hell",
+    "artistName": "Snail Mail",
+    "spotifyUrl": "https://open.spotify.com/track/5qx8TsqN6IlVy3hTWnOBkq",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e22bac16a37570489587ad5c"
+  },
+  {
+    "spotifyTrackId": "0oM65iyqRLyFig97C0XvEU",
+    "trackName": "Butterfly",
+    "artistName": "Snail Mail",
+    "spotifyUrl": "https://open.spotify.com/track/0oM65iyqRLyFig97C0XvEU",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e22bac16a37570489587ad5c"
+  },
+  {
+    "spotifyTrackId": "4V9fJ12KcWd78OSAqYNO9r",
+    "trackName": "Home (feat. Hikaru Utada)",
+    "artistName": "Charlie Puth",
+    "spotifyUrl": "https://open.spotify.com/track/4V9fJ12KcWd78OSAqYNO9r",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273674523e990240dc0317a82c6"
+  },
+  {
+    "spotifyTrackId": "3SCe8EBhzxVx5Tqhv9cYqi",
+    "trackName": "Tractor Beam",
+    "artistName": "Snail Mail",
+    "spotifyUrl": "https://open.spotify.com/track/3SCe8EBhzxVx5Tqhv9cYqi",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bb6214e0b7e1b5ed61bd79e9"
+  },
+  {
+    "spotifyTrackId": "2cGDqP18a0Bme8o2gtjmiO",
+    "trackName": "THE SCYTHE [Feat. TiaCorine & A$AP Ferg]",
+    "artistName": "Denzel Curry",
+    "spotifyUrl": "https://open.spotify.com/track/2cGDqP18a0Bme8o2gtjmiO",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273ff2fcd144b26c74ab66d1a89"
+  },
+  {
+    "spotifyTrackId": "2ynasQ0XWUQbY6SXB4YGLa",
+    "trackName": "COME2ME",
+    "artistName": "3ee",
+    "spotifyUrl": "https://open.spotify.com/track/2ynasQ0XWUQbY6SXB4YGLa",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736f8ed0cb413a5c5c4e30dd80"
+  },
+  {
+    "spotifyTrackId": "7lPuRK4llInMs7m7lGkDCM",
+    "trackName": "Weather For Tennis",
+    "artistName": "Hilary Duff",
+    "spotifyUrl": "https://open.spotify.com/track/7lPuRK4llInMs7m7lGkDCM",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733618fe55bdf2c6c496e0e529"
+  },
+  {
+    "spotifyTrackId": "0CytapqefuNILUq2YdFw78",
+    "trackName": "My Maker",
+    "artistName": "Snail Mail",
+    "spotifyUrl": "https://open.spotify.com/track/0CytapqefuNILUq2YdFw78",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27396f87df13e52ba4523a784eb"
+  },
+  {
+    "spotifyTrackId": "6QletrrmpkUpeJkipX9pgf",
+    "trackName": "Cha Cha Cha",
+    "artistName": "Bruno Mars",
+    "spotifyUrl": "https://open.spotify.com/track/6QletrrmpkUpeJkipX9pgf",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733eb8dc748f7efb1470f74395"
+  },
+  {
+    "spotifyTrackId": "1sVBT215CDmVJvfy1E2OCU",
+    "trackName": "God Was Showing Off",
+    "artistName": "Bruno Mars",
+    "spotifyUrl": "https://open.spotify.com/track/1sVBT215CDmVJvfy1E2OCU",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733eb8dc748f7efb1470f74395"
+  },
+  {
+    "spotifyTrackId": "4i4BVY2JiH4mDSLIBdNGKD",
+    "trackName": "On My Soul",
+    "artistName": "Bruno Mars",
+    "spotifyUrl": "https://open.spotify.com/track/4i4BVY2JiH4mDSLIBdNGKD",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733eb8dc748f7efb1470f74395"
+  },
+  {
+    "spotifyTrackId": "0PV4VQCmE6Ujssr1bnswdF",
+    "trackName": "Something Serious",
+    "artistName": "Bruno Mars",
+    "spotifyUrl": "https://open.spotify.com/track/0PV4VQCmE6Ujssr1bnswdF",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733eb8dc748f7efb1470f74395"
+  },
+  {
+    "spotifyTrackId": "1myZ6GQewhAzMH2dKtKSWK",
+    "trackName": "Dance With Me",
+    "artistName": "Bruno Mars",
+    "spotifyUrl": "https://open.spotify.com/track/1myZ6GQewhAzMH2dKtKSWK",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2733eb8dc748f7efb1470f74395"
+  },
+  {
+    "spotifyTrackId": "3SfgUB5bltOecirPxcevPM",
+    "trackName": "Love In Exile (feat. Michael McDonald & Kenny Loggins)",
+    "artistName": "Charlie Puth",
+    "spotifyUrl": "https://open.spotify.com/track/3SfgUB5bltOecirPxcevPM",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273391d8b7f4d327cb0ec4f0aef"
+  },
+  {
+    "spotifyTrackId": "6VeQarmnr0TxVCnALaLlgD",
+    "trackName": "JUNGLI",
+    "artistName": "COSTHETA",
+    "spotifyUrl": "https://open.spotify.com/track/6VeQarmnr0TxVCnALaLlgD",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273208f5ee64d7738e3bcffc222"
+  },
+  {
+    "spotifyTrackId": "0BZUa34FWCbeR3Y2vfqiqE",
+    "trackName": "Situationship",
+    "artistName": "T.A.M",
+    "spotifyUrl": "https://open.spotify.com/track/0BZUa34FWCbeR3Y2vfqiqE",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a409a73b9cd479b8eedce9ca"
+  },
+  {
+    "spotifyTrackId": "3cWQRSutAjP6PY3kPzgi2b",
+    "trackName": "Rock Music",
+    "artistName": "Charli xcx",
+    "spotifyUrl": "https://open.spotify.com/track/3cWQRSutAjP6PY3kPzgi2b",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b7bc469a85354ff1ae7a1386"
+  },
+  {
+    "spotifyTrackId": "1gNy7vNnelYFoTbOccnXI2",
+    "trackName": "Changes",
+    "artistName": "Charlie Puth",
+    "spotifyUrl": "https://open.spotify.com/track/1gNy7vNnelYFoTbOccnXI2",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273391d8b7f4d327cb0ec4f0aef"
+  },
+  {
+    "spotifyTrackId": "7kcwFYuOoe3AZ1iIiKmaxp",
+    "trackName": "Beat Yourself Up",
+    "artistName": "Charlie Puth",
+    "spotifyUrl": "https://open.spotify.com/track/7kcwFYuOoe3AZ1iIiKmaxp",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273391d8b7f4d327cb0ec4f0aef"
+  },
+  {
+    "spotifyTrackId": "6gB7wTgC9qubJKxOS4cNDE",
+    "trackName": "Cry (feat. Kenny G)",
+    "artistName": "Charlie Puth",
+    "spotifyUrl": "https://open.spotify.com/track/6gB7wTgC9qubJKxOS4cNDE",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273391d8b7f4d327cb0ec4f0aef"
+  },
+  {
+    "spotifyTrackId": "793tMto9guBs0X6c44R5mH",
+    "trackName": "Washed Up",
+    "artistName": "Charlie Puth",
+    "spotifyUrl": "https://open.spotify.com/track/793tMto9guBs0X6c44R5mH",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273391d8b7f4d327cb0ec4f0aef"
+  },
+  {
+    "spotifyTrackId": "0O3OEz6OsTE4tKVhWKpCks",
+    "trackName": "New Jersey (feat. Ravyn Lenae)",
+    "artistName": "Charlie Puth",
+    "spotifyUrl": "https://open.spotify.com/track/0O3OEz6OsTE4tKVhWKpCks",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273391d8b7f4d327cb0ec4f0aef"
+  },
+  {
+    "spotifyTrackId": "3cq2IfK8NOuXDlc0cogY2K",
+    "trackName": "Sideways (feat. Coco Jones)",
+    "artistName": "Charlie Puth",
+    "spotifyUrl": "https://open.spotify.com/track/3cq2IfK8NOuXDlc0cogY2K",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273391d8b7f4d327cb0ec4f0aef"
+  },
+  {
+    "spotifyTrackId": "7Hc6qcJG4NtyZgbNvQyd8U",
+    "trackName": "drop dead",
+    "artistName": "Olivia Rodrigo",
+    "spotifyUrl": "https://open.spotify.com/track/7Hc6qcJG4NtyZgbNvQyd8U",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731a1495ff41046065b9475366"
+  },
+  {
+    "spotifyTrackId": "5rMj1QC9M4CCw8ZOrOOsQ9",
+    "trackName": "The Voyager",
+    "artistName": "Chance Peña",
+    "spotifyUrl": "https://open.spotify.com/track/5rMj1QC9M4CCw8ZOrOOsQ9",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730caf9dc1f2c86545ab016103"
+  },
+  {
+    "spotifyTrackId": "35AiVkvqeGcKWE8bURtPKQ",
+    "trackName": "Mr. Man",
+    "artistName": "Chezile",
+    "spotifyUrl": "https://open.spotify.com/track/35AiVkvqeGcKWE8bURtPKQ",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273db5583c58f9a4a935bc07f27"
+  },
+  {
+    "spotifyTrackId": "32VOsoPR0N9dEZNbogPIeZ",
+    "trackName": "Changes",
+    "artistName": "Tommy Richman",
+    "spotifyUrl": "https://open.spotify.com/track/32VOsoPR0N9dEZNbogPIeZ",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f8cfccc708528298c164df17"
+  },
+  {
+    "spotifyTrackId": "2NT5EOtSEOrjfisvwmSv5S",
+    "trackName": "Material Lover",
+    "artistName": "SIENNA SPIRO",
+    "spotifyUrl": "https://open.spotify.com/track/2NT5EOtSEOrjfisvwmSv5S",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273973cd0eba9aa4d0ce3b08228"
+  },
+  {
+    "spotifyTrackId": "7p3oJMceNz5skGLw52ZOjY",
+    "trackName": "Carry the Weight",
+    "artistName": "Halsey",
+    "spotifyUrl": "https://open.spotify.com/track/7p3oJMceNz5skGLw52ZOjY",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2738ba601757702ea9092999600"
+  },
+  {
+    "spotifyTrackId": "3Fcnn90rR3xPYf1yluDyhu",
+    "trackName": "Hallucination",
+    "artistName": "Isabel LaRosa",
+    "spotifyUrl": "https://open.spotify.com/track/3Fcnn90rR3xPYf1yluDyhu",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731741a3bb71b1f9c4c5831248"
+  },
+  {
+    "spotifyTrackId": "3OuiIicHPLEpTHKmc8Cw7q",
+    "trackName": "sex dreams do cum tru",
+    "artistName": "piri",
+    "spotifyUrl": "https://open.spotify.com/track/3OuiIicHPLEpTHKmc8Cw7q",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273af217b89d0ba4b805a7b193c"
+  },
+  {
+    "spotifyTrackId": "50otYQj8x1wp6HpdRrLXpY",
+    "trackName": "JEZEBEL",
+    "artistName": "GIVĒON",
+    "spotifyUrl": "https://open.spotify.com/track/50otYQj8x1wp6HpdRrLXpY",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27340804dba7b99de3125438c71"
+  },
+  {
+    "spotifyTrackId": "1ZsfLZkWw8KgcwPIp6sseQ",
+    "trackName": "REPLICA (feat. Sasha Keable)",
+    "artistName": "GIVĒON",
+    "spotifyUrl": "https://open.spotify.com/track/1ZsfLZkWw8KgcwPIp6sseQ",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27340804dba7b99de3125438c71"
+  },
+  {
+    "spotifyTrackId": "0O6lm9N6qJclxNFHl51nkr",
+    "trackName": "Hoe Phase",
+    "artistName": "Drake",
+    "spotifyUrl": "https://open.spotify.com/track/0O6lm9N6qJclxNFHl51nkr",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273539bb112d7c970545dd971e3"
+  },
+  {
+    "spotifyTrackId": "1AFW3QBDjBmb4EL9gyiYhe",
+    "trackName": "Cheetah Print (feat. Sexyy Red)",
+    "artistName": "Drake",
+    "spotifyUrl": "https://open.spotify.com/track/1AFW3QBDjBmb4EL9gyiYhe",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273539bb112d7c970545dd971e3"
+  },
+  {
+    "spotifyTrackId": "4qLHbbVJjNsOqWxHrTtvgx",
+    "trackName": "Which One (feat. Central Cee)",
+    "artistName": "Drake",
+    "spotifyUrl": "https://open.spotify.com/track/4qLHbbVJjNsOqWxHrTtvgx",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273539bb112d7c970545dd971e3"
+  },
+  {
+    "spotifyTrackId": "4EoJ151oQ5jY48z4RhSE96",
+    "trackName": "the cure",
+    "artistName": "Olivia Rodrigo",
+    "spotifyUrl": "https://open.spotify.com/track/4EoJ151oQ5jY48z4RhSE96",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27379e480cbab8c7b86d277841a"
+  },
+  {
+    "spotifyTrackId": "4wwOje67xW4mPCf8JvmWYK",
+    "trackName": "Heart Has To Work So Hard",
+    "artistName": "Blondshell",
+    "spotifyUrl": "https://open.spotify.com/track/4wwOje67xW4mPCf8JvmWYK",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273abeea2686b1740debaf7e78d"
+  },
+  {
+    "spotifyTrackId": "0ysGSX0uvuASzmnwwz0tn0",
+    "trackName": "For the Moment",
+    "artistName": "Vansire",
+    "spotifyUrl": "https://open.spotify.com/track/0ysGSX0uvuASzmnwwz0tn0",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e4f1f3ab3a54a267e29a434d"
+  },
+  {
+    "spotifyTrackId": "6xo6pmFkJr3TLpbYdTnYbz",
+    "trackName": "Love That You Try",
+    "artistName": "Vansire",
+    "spotifyUrl": "https://open.spotify.com/track/6xo6pmFkJr3TLpbYdTnYbz",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e4f1f3ab3a54a267e29a434d"
+  },
+  {
+    "spotifyTrackId": "17nKILQNWELsNRGWuTGbpL",
+    "trackName": "I'll Never Feel That Young Again",
+    "artistName": "Strawberry Guy",
+    "spotifyUrl": "https://open.spotify.com/track/17nKILQNWELsNRGWuTGbpL",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273d124f563b8d9c239769fe202"
+  },
+  {
+    "spotifyTrackId": "0qWoOHqTirzo59FQ9eoECH",
+    "trackName": "All I Did Was Dream of You (feat. The Marías)",
+    "artistName": "beabadoobee",
+    "spotifyUrl": "https://open.spotify.com/track/0qWoOHqTirzo59FQ9eoECH",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e0cd9495603ed7f6b4867494"
+  },
+  {
+    "spotifyTrackId": "2fCwv2ppU5nTRTckomIGsd",
+    "trackName": "REDRED",
+    "artistName": "CORTIS",
+    "spotifyUrl": "https://open.spotify.com/track/2fCwv2ppU5nTRTckomIGsd",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27324ace1518851b27e9983f739"
+  },
+  {
+    "spotifyTrackId": "140hCQAPNHoXx3bwoC3Tta",
+    "trackName": "Rinkside",
+    "artistName": "Vansire",
+    "spotifyUrl": "https://open.spotify.com/track/140hCQAPNHoXx3bwoC3Tta",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e4f1f3ab3a54a267e29a434d"
+  },
+  {
+    "spotifyTrackId": "4Pv40sMbSTbgtfnDIWTJDV",
+    "trackName": "The Sun Arrives",
+    "artistName": "Vansire",
+    "spotifyUrl": "https://open.spotify.com/track/4Pv40sMbSTbgtfnDIWTJDV",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e4f1f3ab3a54a267e29a434d"
+  },
+  {
+    "spotifyTrackId": "4FNptC8qbW6cAJBsymtHMI",
+    "trackName": "Promise (When You Go)",
+    "artistName": "After",
+    "spotifyUrl": "https://open.spotify.com/track/4FNptC8qbW6cAJBsymtHMI",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e130aef3b7de05a160281d31"
+  },
+  {
+    "spotifyTrackId": "6Ont2yPAfGzgK5deUADb2v",
+    "trackName": "No Place Like Home",
+    "artistName": "Major Lazer",
+    "spotifyUrl": "https://open.spotify.com/track/6Ont2yPAfGzgK5deUADb2v",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e799e707cd677f087f6f152d"
+  },
+  {
+    "spotifyTrackId": "3INiOLGukdUYz0Z38SBgwc",
+    "trackName": "Champions",
+    "artistName": "IShowSpeed",
+    "spotifyUrl": "https://open.spotify.com/track/3INiOLGukdUYz0Z38SBgwc",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e799e707cd677f087f6f152d"
+  },
+  {
+    "spotifyTrackId": "643AKhZ9nCeQYrJ403HVkf",
+    "trackName": "Illuminate",
+    "artistName": "Jessie Reyez",
+    "spotifyUrl": "https://open.spotify.com/track/643AKhZ9nCeQYrJ403HVkf",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e799e707cd677f087f6f152d"
+  },
+  {
+    "spotifyTrackId": "4P4BoornpECdwPW3atJuuo",
+    "trackName": "Por Ella",
+    "artistName": "Los Ángeles Azules",
+    "spotifyUrl": "https://open.spotify.com/track/4P4BoornpECdwPW3atJuuo",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e799e707cd677f087f6f152d"
+  },
+  {
+    "spotifyTrackId": "6FLfoe2bY37X45OS7AZW6B",
+    "trackName": "Three Nations",
+    "artistName": "21 Savage",
+    "spotifyUrl": "https://open.spotify.com/track/6FLfoe2bY37X45OS7AZW6B",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e799e707cd677f087f6f152d"
+  },
+  {
+    "spotifyTrackId": "6XR2w5VZaUc3OO1pFoaVV8",
+    "trackName": "In The Stars - Cirkut and Andrew Watt Remix",
+    "artistName": "The Rolling Stones",
+    "spotifyUrl": "https://open.spotify.com/track/6XR2w5VZaUc3OO1pFoaVV8",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e799e707cd677f087f6f152d"
+  },
+  {
+    "spotifyTrackId": "3oqNW62CBK5jFuvYAFQWL3",
+    "trackName": "Mi Mexico Lindo",
+    "artistName": "Alejandro Fernández",
+    "spotifyUrl": "https://open.spotify.com/track/3oqNW62CBK5jFuvYAFQWL3",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e799e707cd677f087f6f152d"
+  },
+  {
+    "spotifyTrackId": "55pBIZO1cqoldeqpp5WR7H",
+    "trackName": "the cure",
+    "artistName": "Olivia Rodrigo",
+    "spotifyUrl": "https://open.spotify.com/track/55pBIZO1cqoldeqpp5WR7H",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735cf234eeb7a2edf44bf64a46"
+  },
+  {
+    "spotifyTrackId": "49j6SvuvWfbEKZKzsHCdLJ",
+    "trackName": "stupid song",
+    "artistName": "Olivia Rodrigo",
+    "spotifyUrl": "https://open.spotify.com/track/49j6SvuvWfbEKZKzsHCdLJ",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736949b83f85d782b21ce70583"
+  },
+  {
+    "spotifyTrackId": "3fRCAPMMZ8l8P9YKI6OCzD",
+    "trackName": "drop dead",
+    "artistName": "Olivia Rodrigo",
+    "spotifyUrl": "https://open.spotify.com/track/3fRCAPMMZ8l8P9YKI6OCzD",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736949b83f85d782b21ce70583"
+  },
+  {
+    "spotifyTrackId": "6jfiwkcwt8iYCdkbLukxeI",
+    "trackName": "maggots for brains",
+    "artistName": "Olivia Rodrigo",
+    "spotifyUrl": "https://open.spotify.com/track/6jfiwkcwt8iYCdkbLukxeI",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736949b83f85d782b21ce70583"
+  },
+  {
+    "spotifyTrackId": "6Hdc3IQeyCxG5d14uAcwQW",
+    "trackName": "u + me = <3",
+    "artistName": "Olivia Rodrigo",
+    "spotifyUrl": "https://open.spotify.com/track/6Hdc3IQeyCxG5d14uAcwQW",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2735cf234eeb7a2edf44bf64a46"
+  },
+  {
+    "spotifyTrackId": "6eoIuFQSEXcwQqr0RnFdW8",
+    "trackName": "Lost Boys",
+    "artistName": "Phoebe Bridgers",
+    "spotifyUrl": "https://open.spotify.com/track/6eoIuFQSEXcwQqr0RnFdW8",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27325a647ace83ba32770ab5d0f"
+  },
+  {
+    "spotifyTrackId": "2hAQCoAswuQ643VhIuRC2p",
+    "trackName": "The Governor’s Waltz",
+    "artistName": "Phoebe Bridgers",
+    "spotifyUrl": "https://open.spotify.com/track/2hAQCoAswuQ643VhIuRC2p",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27325a647ace83ba32770ab5d0f"
+  },
+  {
+    "spotifyTrackId": "6TSHGfV9E66qCNu4UP6xZu",
+    "trackName": "Bobby",
+    "artistName": "Phoebe Bridgers",
+    "spotifyUrl": "https://open.spotify.com/track/6TSHGfV9E66qCNu4UP6xZu",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27325a647ace83ba32770ab5d0f"
+  },
+  {
+    "spotifyTrackId": "20jbSiX29FDX4oQxBXyUEi",
+    "trackName": "hate that i made you love me",
+    "artistName": "Ariana Grande",
+    "spotifyUrl": "https://open.spotify.com/track/20jbSiX29FDX4oQxBXyUEi",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273b622d42c30697e1e1414343c"
+  },
+  {
+    "spotifyTrackId": "79RJg6MqIJlBuedcMqB9F0",
+    "trackName": "My Body Isn't Ready",
+    "artistName": "sombr",
+    "spotifyUrl": "https://open.spotify.com/track/79RJg6MqIJlBuedcMqB9F0",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27355615e9242bd96706c68a743"
+  },
+  {
+    "spotifyTrackId": "1KFVosfWWb6oic6sTx6Lxo",
+    "trackName": "Rock Music",
+    "artistName": "Charli xcx",
+    "spotifyUrl": "https://open.spotify.com/track/1KFVosfWWb6oic6sTx6Lxo",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273238e2ff91714a8db91b8a64d"
+  },
+  {
+    "spotifyTrackId": "0g8FizeHVo2cG7qxBfmckf",
+    "trackName": "SS26",
+    "artistName": "Charli xcx",
+    "spotifyUrl": "https://open.spotify.com/track/0g8FizeHVo2cG7qxBfmckf",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273238e2ff91714a8db91b8a64d"
+  },
+  {
+    "spotifyTrackId": "5Fdj0DtH4ZhymltyN5xEv2",
+    "trackName": "Camera",
+    "artistName": "Charli xcx",
+    "spotifyUrl": "https://open.spotify.com/track/5Fdj0DtH4ZhymltyN5xEv2",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273238e2ff91714a8db91b8a64d"
+  },
+  {
+    "spotifyTrackId": "7GVLyPEpJtQZiYt95LF0ng",
+    "trackName": "2007",
+    "artistName": "Charli xcx",
+    "spotifyUrl": "https://open.spotify.com/track/7GVLyPEpJtQZiYt95LF0ng",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273238e2ff91714a8db91b8a64d"
+  },
+  {
+    "spotifyTrackId": "6FFHObl8rAxig1QZewCTXN",
+    "trackName": "Wink Wink",
+    "artistName": "Charli xcx",
+    "spotifyUrl": "https://open.spotify.com/track/6FFHObl8rAxig1QZewCTXN",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273238e2ff91714a8db91b8a64d"
+  },
+  {
+    "spotifyTrackId": "61Oyg0lrAOMjBpEStqfOZ1",
+    "trackName": "Hit the Wall",
+    "artistName": "Gracie Abrams",
+    "spotifyUrl": "https://open.spotify.com/track/61Oyg0lrAOMjBpEStqfOZ1",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27399bc33b47a0a67fd50783055"
+  },
+  {
+    "spotifyTrackId": "18JiNe32mvOL72aysWL2ob",
+    "trackName": "Death Wish",
+    "artistName": "Gracie Abrams",
+    "spotifyUrl": "https://open.spotify.com/track/18JiNe32mvOL72aysWL2ob",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27399bc33b47a0a67fd50783055"
+  },
+  {
+    "spotifyTrackId": "5a6p56me3eFdKXcWnsPtLE",
+    "trackName": "The Knife",
+    "artistName": "Gracie Abrams",
+    "spotifyUrl": "https://open.spotify.com/track/5a6p56me3eFdKXcWnsPtLE",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27399bc33b47a0a67fd50783055"
+  },
+  {
+    "spotifyTrackId": "7JW8FRWVCOQDs40IjEXdPi",
+    "trackName": "WannaCry",
+    "artistName": "Ninajirachi",
+    "spotifyUrl": "https://open.spotify.com/track/7JW8FRWVCOQDs40IjEXdPi",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a4cd3b67b8747f787068b366"
+  },
+  {
+    "spotifyTrackId": "6DvC3MnUBGL9pauGHg8jTf",
+    "trackName": "You Don't Need A Reason To Call (feat. Valley)",
+    "artistName": "Babygirl",
+    "spotifyUrl": "https://open.spotify.com/track/6DvC3MnUBGL9pauGHg8jTf",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273017bf0af706826c2d662a069"
+  },
+  {
+    "spotifyTrackId": "0EwNxEtIgDBkY697wTMB4h",
+    "trackName": "CANDLELIGHT",
+    "artistName": "Denzel Curry",
+    "spotifyUrl": "https://open.spotify.com/track/0EwNxEtIgDBkY697wTMB4h",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273e33108f47dbaec59793f0932"
+  },
+  {
+    "spotifyTrackId": "7Mtji9f83gpVvuvFcKVdgL",
+    "trackName": "When The Spasms Cease",
+    "artistName": "No Cure",
+    "spotifyUrl": "https://open.spotify.com/track/7Mtji9f83gpVvuvFcKVdgL",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731bec6511601a7748eda2dce1"
+  },
+  {
+    "spotifyTrackId": "372cPJetNPrwppZo9k9XNU",
+    "trackName": "Slowly Turning Blue",
+    "artistName": "No Cure",
+    "spotifyUrl": "https://open.spotify.com/track/372cPJetNPrwppZo9k9XNU",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731bec6511601a7748eda2dce1"
+  },
+  {
+    "spotifyTrackId": "3DxI7K2qNYt2YThN7gc8wF",
+    "trackName": "My World In Flames",
+    "artistName": "No Cure",
+    "spotifyUrl": "https://open.spotify.com/track/3DxI7K2qNYt2YThN7gc8wF",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2731bec6511601a7748eda2dce1"
+  },
+  {
+    "spotifyTrackId": "2hAQCoAswuQ643VhIuRC2p",
+    "trackName": "The Governor’s Waltz",
+    "artistName": "Phoebe Bridgers",
+    "spotifyUrl": "https://open.spotify.com/track/2hAQCoAswuQ643VhIuRC2p",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27325a647ace83ba32770ab5d0f"
+  },
+  {
+    "spotifyTrackId": "0ABgQEAsfdvwtOyCe113lt",
+    "trackName": "Lights Burn Dimmer",
+    "artistName": "Fred again..",
+    "spotifyUrl": "https://open.spotify.com/track/0ABgQEAsfdvwtOyCe113lt",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273f890bbb2cc4c116ea0c8b87a"
+  },
+  {
+    "spotifyTrackId": "6Fzp2cbzccS0haF0mJFnM6",
+    "trackName": "No, it's always personal",
+    "artistName": "Clawmarks",
+    "spotifyUrl": "https://open.spotify.com/track/6Fzp2cbzccS0haF0mJFnM6",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273a6ac6e93171f4bc73d96272d"
+  },
+  {
+    "spotifyTrackId": "0xUJsr1wNaZctBrvfQ7Py7",
+    "trackName": "MASHOOR",
+    "artistName": "COSTHETA",
+    "spotifyUrl": "https://open.spotify.com/track/0xUJsr1wNaZctBrvfQ7Py7",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2730b4686e45fd304aa6c299e08"
+  },
+  {
+    "spotifyTrackId": "4Y4BpyeLGe2UIYK9mEJRHW",
+    "trackName": "Red Siren Pick Up",
+    "artistName": "Magdalene",
+    "spotifyUrl": "https://open.spotify.com/track/4Y4BpyeLGe2UIYK9mEJRHW",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273c9100d944eee820a1f7e1679"
+  },
+  {
+    "spotifyTrackId": "0tYDtbOBF1v8qM1ZPyPlv3",
+    "trackName": "HOLE",
+    "artistName": "Current Joys",
+    "spotifyUrl": "https://open.spotify.com/track/0tYDtbOBF1v8qM1ZPyPlv3",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2736af3739c44f3d0731fb266de"
+  },
+  {
+    "spotifyTrackId": "2fCwv2ppU5nTRTckomIGsd",
+    "trackName": "REDRED",
+    "artistName": "CORTIS",
+    "spotifyUrl": "https://open.spotify.com/track/2fCwv2ppU5nTRTckomIGsd",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b27324ace1518851b27e9983f739"
+  },
+  {
+    "spotifyTrackId": "293ulxBpFSZei0i7LIdcXx",
+    "trackName": "Love Ruins Everything",
+    "artistName": "Tiny Habits",
+    "spotifyUrl": "https://open.spotify.com/track/293ulxBpFSZei0i7LIdcXx",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b2737b60c4cec393962c6303395a"
+  },
+  {
+    "spotifyTrackId": "37hZrsZ7Ab3xDppA4qAb3S",
+    "trackName": "You Don't Need A Reason To Call (feat. Valley)",
+    "artistName": "Babygirl",
+    "spotifyUrl": "https://open.spotify.com/track/37hZrsZ7Ab3xDppA4qAb3S",
+    "imageUrl": "https://i.scdn.co/image/ab67616d0000b273bb527e0472e9a4b3f9b50798"
+  }
+]
