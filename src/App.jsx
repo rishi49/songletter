@@ -2,10 +2,9 @@ import { useEffect, useState } from 'react'
 import './App.css'
 
 import {
-  loginWithSpotify,
   getAccessToken,
   getTopArtists,
-  getPlaylistTracks
+  loginWithSpotify
 } from './spotify'
 
 import {
@@ -15,7 +14,6 @@ import {
 import candidateProfiles from './data/candidateProfiles.json'
 import { rankCandidates } from './recommendation'
 
-import { exportCandidates } from './exportCandidates'
 
 function App() {
   const [artists, setArtists] = useState([])
@@ -29,6 +27,9 @@ function App() {
       getAccessToken(code)
         .then(async token => {
           window.history.replaceState({}, document.title, '/')
+
+          // Comment out when candidate-input.json does not need regenerating.
+          // await createCandidateInput(token, '3Ie0Yb9bCbYX6kQM3MHvjn')
 
           // Fetch top artists
           const artistsData = await getTopArtists(token)
@@ -47,14 +48,10 @@ function App() {
 
           setRecommendations(ranked.slice(0, 10))
 
-          console.log(
-            'RECOMMENDATIONS:',
-            ranked.slice(0, 10)
-          )
+          // console.log('TOP ARTISTS:', artistsData.items.map(a => a.name))
+          // console.log('TASTE PROFILE:', tasteProfile)
+          // console.log('TOP RECOMMENDATIONS:', ranked.slice(0, 10))
 
-          console.log('TOP ARTISTS:', artistsData.items.map(a => a.name))
-          console.log('TASTE PROFILE:', tasteProfile)
-          console.log('TOP RECOMMENDATIONS:', ranked.slice(0, 10))
         })
         .catch(error => {
           console.error('ERROR:', error)

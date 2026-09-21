@@ -15,11 +15,16 @@ export function scoreCandidate(candidate, tasteProfile) {
         }
     }
 
-    return { score, matchedTags }
+    return {
+        score,
+        matchedTags
+    }
 }
 
 export function rankCandidates(candidates, tasteProfile) {
-    return candidates
+
+    // Score every candidate
+    const ranked = candidates
         .map(candidate => {
             const { score, matchedTags } =
                 scoreCandidate(candidate, tasteProfile)
@@ -31,4 +36,15 @@ export function rankCandidates(candidates, tasteProfile) {
             }
         })
         .sort((a, b) => b.score - a.score)
+
+    // Keep only one track per album
+    const bestByAlbum = new Map()
+
+    for (const candidate of ranked) {
+        if (!bestByAlbum.has(candidate.albumId)) {
+            bestByAlbum.set(candidate.albumId, candidate)
+        }
+    }
+
+    return [...bestByAlbum.values()]
 }
