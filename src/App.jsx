@@ -2,9 +2,9 @@ import { useEffect, useState } from 'react'
 import './App.css'
 
 import {
-  loginWithSpotify,
   getAccessToken,
-  getTopArtists
+  getTopArtists,
+  loginWithSpotify
 } from './spotify'
 
 import {
@@ -14,7 +14,6 @@ import {
 import candidateProfiles from './data/candidateProfiles.json'
 import { rankCandidates } from './recommendation'
 
-import { createCandidateInput } from './exportCandidates'
 
 function App() {
   const [artists, setArtists] = useState([])
