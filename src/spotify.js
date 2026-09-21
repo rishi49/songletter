@@ -101,40 +101,6 @@ export async function getTopArtists(accessToken) {
   return response.json()
 }
 
-// export async function getTopTracks(accessToken) {
-//   const response = await fetch(
-//     'https://api.spotify.com/v1/me/top/tracks?limit=10&time_range=short_term',
-//     {
-//       headers: {
-//         Authorization: `Bearer ${accessToken}`,
-//       },
-//     }
-//   )
-
-//   if (!response.ok) {
-//     throw new Error('Failed to fetch top tracks')
-//   }
-
-//   return response.json()
-// }
-
-// export async function getRecentlyPlayed(accessToken) {
-//   const response = await fetch(
-//     'https://api.spotify.com/v1/me/player/recently-played?limit=50',
-//     {
-//       headers: {
-//         Authorization: `Bearer ${accessToken}`,
-//       },
-//     }
-//   )
-
-//   if (!response.ok) {
-//     throw new Error('Failed to fetch recently played tracks')
-//   }
-
-//   return response.json()
-// }
-
 export async function getPlaylistTracks(accessToken, playlistId) {
   let url =
     `https://api.spotify.com/v1/playlists/${playlistId}/items?limit=50`
