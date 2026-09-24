@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=VT323&display=swap');
 
 #root {
   min-height: 100vh;
@@ -34,11 +34,14 @@ body {
   font-size: 42px;
   letter-spacing: 3px;
   margin: 0;
+  text-align: center;
 }
 
 .header p {
   margin-bottom: 0;
-  font-size: 13px;
+  font-family: 'Space Mono', monospace;
+  font-size: 15px;
+  text-align: center;
 }
 
 .spotify-button {
@@ -64,7 +67,8 @@ body {
 
 .subtitle {
   text-align: center;
-  font-size: 12px;
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
   font-style: italic;
 }
 
@@ -87,6 +91,7 @@ body {
 
   background: rgba(238, 238, 238, 0.35);
   backdrop-filter: invert(0);
+
   transition:
     background-color 0.25s ease,
     backdrop-filter 0.25s ease,
@@ -109,7 +114,6 @@ body {
   width: 90px;
   height: 90px;
   object-fit: cover;
-
   border: 2px solid black;
 }
 
@@ -136,13 +140,17 @@ body {
   font-weight: bold;
 }
 
-.loading-screen {
-  min-height: 400px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+.loading-screen p {
+  width: 380px;
+  max-width: 90%;
+  min-height: 24px;
+
   text-align: center;
+
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
 }
 
 .loading-star {
@@ -177,5 +185,119 @@ body {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+.ticker {
+  margin-top: 8px;
+  overflow: hidden;
+  white-space: nowrap;
+
+  /* Plain white normally */
+  background: white;
+  border: 2px inset #aaa;
+
+  transition: background-color 0.3s ease;
+}
+
+.ticker-track {
+  display: flex;
+  width: max-content;
+
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  font-weight: bold;
+  color: #000080;
+
+  animation: tickerScroll 35s linear infinite;
+}
+
+.ticker-track span {
+  flex-shrink: 0;
+  padding: 6px 25px;
+}
+
+/* Reveal the wallpaper on hover */
+.ticker:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+@keyframes tickerScroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.loading-screen {
+  min-height: 400px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  text-align: center;
+}
+
+.loading-screen p {
+  width: 380px;
+  max-width: 90%;
+  min-height: 24px;
+
+  margin: 15px auto;
+
+  text-align: center;
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+.loading-bar {
+  width: 280px;
+  height: 18px;
+
+  margin: 15px auto 0;
+
+  background: white;
+  border: 3px inset #aaa;
+  padding: 2px;
+}
+
+.loading-bar-fill {
+  height: 100%;
+  width: 0;
+  background: #000080;
+
+  animation: fakeProgress 10s ease-out forwards;
+}
+
+@keyframes fakeProgress {
+  0% {
+    width: 3%;
+  }
+
+  20% {
+    width: 25%;
+  }
+
+  45% {
+    width: 48%;
+  }
+
+  70% {
+    width: 68%;
+  }
+
+  85% {
+    width: 78%;
+  }
+
+  100% {
+    width: 90%;
   }
 }

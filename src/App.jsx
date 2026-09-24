@@ -37,7 +37,7 @@ function App() {
       setLoadingMessage(current =>
         (current + 1) % loadingMessages.length
       )
-    }, 800)
+    }, 1400)
 
     return () => clearInterval(interval)
   }, [isLoading])
@@ -101,6 +101,27 @@ function App() {
         <h1>★ SONGLETTER ★</h1>
         <p>discover music you'll actually like</p>
       </header>
+      <div className="ticker">
+        <div className="ticker-track">
+          <span>
+            ★ 10 TRACKS SELECTED JUST 4 YOU ★
+            POWERED BY YOUR SPOTIFY TASTE ★
+            FRESH PICKS FROM THE INTERNET ★
+            NO AI RECCOMENDATIONS, JUST BAD MATHS ★
+            MADE WITH LOVE & QUESTIONABLE MUSIC TASTE ★
+            WELCOME TO SONGLETTER ★
+          </span>
+
+          <span>
+            ★ 10 TRACKS SELECTED JUST 4 YOU ★
+            POWERED BY YOUR SPOTIFY TASTE ★
+            FRESH PICKS FROM THE INTERNET ★
+            NO AI RECCOMENDATIONS, JUST BAD MATHS ★
+            MADE WITH LOVE & QUESTIONABLE MUSIC TASTE ★
+            WELCOME TO SONGLETTER ★
+          </span>
+        </div>
+      </div>
 
 
       {isLoading ? (
@@ -110,6 +131,9 @@ function App() {
 
           <p>
             {loadingMessages[loadingMessage]}
+            <div className="loading-bar">
+              <div className="loading-bar-fill"></div>
+            </div>
           </p>
         </section>
 
