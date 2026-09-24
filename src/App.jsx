@@ -18,12 +18,39 @@ import { rankCandidates } from './recommendation'
 function App() {
   const [artists, setArtists] = useState([])
   const [recommendations, setRecommendations] = useState([])
+  const [isLoading, setIsLoading] = useState(false)
+  const [loadingMessage, setLoadingMessage] = useState(0)
 
+  const loadingMessages = [
+    'READING YOUR LISTENING HISTORY...',
+    'FIGURING OUT YOUR TASTE...',
+    'DIGGING THROUGH THE CRATES...',
+    'MAKING YOUR SONGLETTER...'
+  ]
+
+
+  // Change loading message every 800ms
+  useEffect(() => {
+    if (!isLoading) return
+
+    const interval = setInterval(() => {
+      setLoadingMessage(current =>
+        (current + 1) % loadingMessages.length
+      )
+    }, 800)
+
+    return () => clearInterval(interval)
+  }, [isLoading])
+
+
+  // Spotify callback + recommendation generation
   useEffect(() => {
     const params = new URLSearchParams(window.location.search)
     const code = params.get('code')
 
     if (code) {
+      setIsLoading(true)
+
       getAccessToken(code)
         .then(async token => {
           window.history.replaceState({}, document.title, '/')
@@ -47,17 +74,25 @@ function App() {
           )
 
           setRecommendations(ranked.slice(0, 10))
+          setIsLoading(false)
 
-          // console.log('TOP ARTISTS:', artistsData.items.map(a => a.name))
+          // console.log(
+          //   'TOP ARTISTS:',
+          //   artistsData.items.map(a => a.name)
+          // )
           // console.log('TASTE PROFILE:', tasteProfile)
-          // console.log('TOP RECOMMENDATIONS:', ranked.slice(0, 10))
-
+          // console.log(
+          //   'TOP RECOMMENDATIONS:',
+          //   ranked.slice(0, 10)
+          // )
         })
         .catch(error => {
           console.error('ERROR:', error)
+          setIsLoading(false)
         })
     }
   }, [])
+
 
   return (
     <div className="page">
@@ -67,14 +102,28 @@ function App() {
         <p>discover music you'll actually like</p>
       </header>
 
-      {recommendations.length === 0 ? (
+
+      {isLoading ? (
+
+        <section className="loading-screen">
+          <div className="loading-star">★</div>
+
+          <p>
+            {loadingMessages[loadingMessage]}
+          </p>
+        </section>
+
+      ) : recommendations.length === 0 ? (
+
         <button
           className="spotify-button"
           onClick={loginWithSpotify}
         >
           CONNECT SPOTIFY
         </button>
+
       ) : (
+
         <section className="newsletter">
 
           <div className="section-title">
@@ -107,8 +156,13 @@ function App() {
                 />
 
                 <div className="track-info">
-                  <strong>{track.trackName}</strong>
-                  <span>{track.artistName}</span>
+                  <strong>
+                    {track.trackName}
+                  </strong>
+
+                  <span>
+                    {track.artistName}
+                  </span>
                 </div>
 
               </a>
@@ -118,6 +172,7 @@ function App() {
           </div>
 
         </section>
+
       )}
 
     </div>
