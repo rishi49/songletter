@@ -373,6 +373,20 @@ function App() {
 
         <button
           className={
+            activeTab === 'editors'
+              ? 'active'
+              : ''
+          }
+
+          onClick={() =>
+            setActiveTab('editors')
+          }
+        >
+          EDITOR'S CHOICE
+        </button>
+
+        <button
+          className={
             activeTab ===
               'recommendations'
               ? 'active'
@@ -386,21 +400,6 @@ function App() {
           }
         >
           RECOMMENDATIONS
-        </button>
-
-
-        <button
-          className={
-            activeTab === 'editors'
-              ? 'active'
-              : ''
-          }
-
-          onClick={() =>
-            setActiveTab('editors')
-          }
-        >
-          EDITOR'S CHOICE
         </button>
 
 
