@@ -15,6 +15,11 @@ import {
 import candidateProfiles from './data/candidateProfiles.json'
 import { rankCandidates } from './recommendation'
 
+import wallpaperRecommendations from './assets/wallpaper.jpg'
+import wallpaperEditors from './assets/wallpaper4.jpg'
+import wallpaperTopTracks from './assets/wallpaper3.jpg'
+import wallpaperMyMusic from './assets/wallpaper5.jpeg'
+
 
 function App() {
   const [artists, setArtists] = useState([])
@@ -49,6 +54,13 @@ function App() {
     'DIGGING THROUGH THE CRATES...',
     'MAKING YOUR SONGLETTER...'
   ]
+
+  const wallpapers = {
+    recommendations: wallpaperRecommendations,
+    editors: wallpaperEditors,
+    topTracks: wallpaperTopTracks,
+    myMusic: wallpaperMyMusic
+  }
 
 
   /*
@@ -320,357 +332,203 @@ function App() {
 
 
   return (
-    <div className="page">
+    <>
+      <div
+        className="wallpaper"
+        style={{
+          backgroundImage: `url(${wallpapers[activeTab]})`
+        }}
+      />
+
+      <div className="page">
+        {/* rest of Songletter */}
 
 
-      {/* HEADER */}
+        {/* HEADER */}
 
-      <header className="header">
+        <header className="header">
 
-        <h1>
-          ★ SONGLETTER ★
-        </h1>
+          <h1>
+            ★ SONGLETTER ★
+          </h1>
 
-        <p>
-          discover music you'll actually like
-        </p>
+          <p>
+            discover music you'll actually like
+          </p>
 
-      </header>
+        </header>
 
 
-      {/* TICKER */}
+        {/* TICKER */}
 
-      <div className="ticker">
+        <div className="ticker">
 
-        <div className="ticker-track">
+          <div className="ticker-track">
 
-          <span>
-            ★ 10 TRACKS SELECTED JUST 4 YOU ★
-            POWERED BY YOUR SPOTIFY TASTE ★
-            FRESH PICKS FROM THE INTERNET ★
-            NO AI RECCOMENDATIONS, JUST BAD MATHS ★
-            MADE WITH LOVE & QUESTIONABLE MUSIC TASTE ★
-            WELCOME TO SONGLETTER ★
-          </span>
+            <span>
+              ★ 10 TRACKS SELECTED JUST 4 YOU ★
+              POWERED BY YOUR SPOTIFY TASTE ★
+              FRESH PICKS FROM THE INTERNET ★
+              NO AI RECCOMENDATIONS, JUST BAD MATHS ★
+              MADE WITH LOVE & QUESTIONABLE MUSIC TASTE ★
+              WELCOME TO SONGLETTER ★
+            </span>
 
-          <span>
-            ★ 10 TRACKS SELECTED JUST 4 YOU ★
-            POWERED BY YOUR SPOTIFY TASTE ★
-            FRESH PICKS FROM THE INTERNET ★
-            NO AI RECCOMENDATIONS, JUST BAD MATHS ★
-            MADE WITH LOVE & QUESTIONABLE MUSIC TASTE ★
-            WELCOME TO SONGLETTER ★
-          </span>
+            <span>
+              ★ 10 TRACKS SELECTED JUST 4 YOU ★
+              POWERED BY YOUR SPOTIFY TASTE ★
+              FRESH PICKS FROM THE INTERNET ★
+              NO AI RECCOMENDATIONS, JUST BAD MATHS ★
+              MADE WITH LOVE & QUESTIONABLE MUSIC TASTE ★
+              WELCOME TO SONGLETTER ★
+            </span>
+
+          </div>
 
         </div>
 
-      </div>
 
+        {/* MAIN TABS */}
 
-      {/* MAIN TABS */}
+        <nav className="tabs">
 
-      <nav className="tabs">
-
-        <button
-          className={
-            activeTab === 'editors'
-              ? 'active'
-              : ''
-          }
-
-          onClick={() =>
-            setActiveTab('editors')
-          }
-        >
-          EDITOR'S CHOICE
-        </button>
-
-        <button
-          className={
-            activeTab ===
-              'recommendations'
-              ? 'active'
-              : ''
-          }
-
-          onClick={() =>
-            setActiveTab(
-              'recommendations'
-            )
-          }
-        >
-          RECOMMENDATIONS
-        </button>
-
-
-        <button
-          className={
-            activeTab === 'topTracks'
-              ? 'active'
-              : ''
-          }
-
-          onClick={() =>
-            setActiveTab('topTracks')
-          }
-        >
-          YOUR TOP TRACKS
-        </button>
-
-      </nav>
-
-
-      {/* LOADING */}
-
-      {isLoading && (
-
-        <section className="loading-screen">
-
-          <div className="loading-star">
-            ★
-          </div>
-
-          <p>
-            {
-              loadingMessages[
-              loadingMessage
-              ]
+          <button
+            className={
+              activeTab === 'editors'
+                ? 'active'
+                : ''
             }
-          </p>
 
-          <div className="loading-bar">
+            onClick={() =>
+              setActiveTab('editors')
+            }
+          >
+            EDITOR'S CHOICE
+          </button>
 
-            <div className="loading-bar-fill">
+          <button
+            className={
+              activeTab ===
+                'recommendations'
+                ? 'active'
+                : ''
+            }
+
+            onClick={() =>
+              setActiveTab(
+                'recommendations'
+              )
+            }
+          >
+            RECOMMENDATIONS
+          </button>
+
+
+          <button
+            className={
+              activeTab === 'topTracks'
+                ? 'active'
+                : ''
+            }
+
+            onClick={() =>
+              setActiveTab('topTracks')
+            }
+          >
+            YOUR TOP TRACKS
+          </button>
+
+        </nav>
+
+
+        {/* LOADING */}
+
+        {isLoading && (
+
+          <section className="loading-screen">
+
+            <div className="loading-star">
+              ★
             </div>
 
-          </div>
-
-        </section>
-
-      )}
-
-
-      {/* NOT CONNECTED */}
-
-      {!accessToken &&
-        !isLoading && (
-
-          <div className="connect-screen">
-
-            <button
-              className="spotify-button"
-              onClick={
-                loginWithSpotify
+            <p>
+              {
+                loadingMessages[
+                loadingMessage
+                ]
               }
-            >
-              CONNECT SPOTIFY
-            </button>
+            </p>
 
-          </div>
+            <div className="loading-bar">
+
+              <div className="loading-bar-fill">
+              </div>
+
+            </div>
+
+          </section>
 
         )}
 
 
-      {/* CONNECTED */}
+        {/* NOT CONNECTED */}
 
-      {accessToken &&
-        !isLoading && (
-          <>
+        {!accessToken &&
+          !isLoading && (
 
+            <div className="connect-screen">
 
-            {/* RECOMMENDATIONS */}
+              <button
+                className="spotify-button"
+                onClick={
+                  loginWithSpotify
+                }
+              >
+                CONNECT SPOTIFY
+              </button>
 
-            {activeTab ===
-              'recommendations' && (
+            </div>
 
-                <section className="newsletter">
-
-                  <div className="section-title">
-                    ♪ 10 PICKS 4 U ♪
-                  </div>
-
-                  <p className="subtitle">
-                    based on what you've been listening to...
-                  </p>
+          )}
 
 
-                  <div className="recommendation-grid">
+        {/* CONNECTED */}
 
-                    {recommendations.map(
-                      (track, index) => (
-
-                        <a
-                          key={
-                            track.spotifyTrackId
-                          }
-
-                          className="track-card"
-
-                          href={
-                            track.spotifyUrl
-                          }
-
-                          target="_blank"
-
-                          rel="noreferrer"
-                        >
-
-                          <div className="track-number">
-                            #{index + 1}
-                          </div>
+        {accessToken &&
+          !isLoading && (
+            <>
 
 
-                          <img
-                            src={
-                              track.imageUrl
-                            }
+              {/* RECOMMENDATIONS */}
 
-                            alt={
-                              track.trackName
-                            }
-                          />
+              {activeTab ===
+                'recommendations' && (
 
+                  <section className="newsletter">
 
-                          <div className="track-info">
+                    <div className="section-title">
+                      ♪ 10 PICKS 4 U ♪
+                    </div>
 
-                            <strong>
-                              {
-                                track.trackName
-                              }
-                            </strong>
-
-                            <span>
-                              {
-                                track.artistName
-                              }
-                            </span>
-
-                          </div>
-
-                        </a>
-
-                      )
-                    )}
-
-                  </div>
-
-                </section>
-
-              )}
-
-
-            {/* EDITOR'S CHOICE */}
-
-            {activeTab ===
-              'editors' && (
-
-                <section className="tab-page">
-
-                  <div className="section-title">
-                    ♪ EDITOR'S CHOICE ♪
-                  </div>
-
-                  <p className="subtitle">
-                    handpicked tracks from songletter
-                  </p>
-
-                </section>
-
-              )}
-
-
-            {/* TOP TRACKS */}
-
-            {activeTab ===
-              'topTracks' && (
-
-                <section className="tab-page">
-
-                  <div className="section-title">
-                    ♪ YOUR TOP TRACKS ♪
-                  </div>
-
-
-                  <div className="time-range-tabs">
-
-                    <button
-                      className={
-                        topTracksRange ===
-                          'short_term'
-                          ? 'active'
-                          : ''
-                      }
-
-                      onClick={() =>
-                        setTopTracksRange(
-                          'short_term'
-                        )
-                      }
-                    >
-                      RECENT
-                    </button>
-
-
-                    <button
-                      className={
-                        topTracksRange ===
-                          'medium_term'
-                          ? 'active'
-                          : ''
-                      }
-
-                      onClick={() =>
-                        setTopTracksRange(
-                          'medium_term'
-                        )
-                      }
-                    >
-                      6 MONTHS
-                    </button>
-
-
-                    <button
-                      className={
-                        topTracksRange ===
-                          'long_term'
-                          ? 'active'
-                          : ''
-                      }
-
-                      onClick={() =>
-                        setTopTracksRange(
-                          'long_term'
-                        )
-                      }
-                    >
-                      LONG TERM
-                    </button>
-
-                  </div>
-
-
-                  {topTracksLoading ? (
-
-                    <p className="top-tracks-loading">
-                      LOADING TRACKS...
+                    <p className="subtitle">
+                      based on what you've been listening to...
                     </p>
 
-                  ) : (
 
                     <div className="recommendation-grid">
 
-                      {currentTopTracks.map(
+                      {recommendations.map(
                         (track, index) => (
 
                           <a
-                            key={track.id}
+                            key={
+                              track.spotifyTrackId
+                            }
 
                             className="track-card"
 
                             href={
-                              track
-                                .external_urls
-                                .spotify
+                              track.spotifyUrl
                             }
 
                             target="_blank"
@@ -685,13 +543,11 @@ function App() {
 
                             <img
                               src={
-                                track.album
-                                  .images[0]
-                                  ?.url
+                                track.imageUrl
                               }
 
                               alt={
-                                track.name
+                                track.trackName
                               }
                             />
 
@@ -700,18 +556,13 @@ function App() {
 
                               <strong>
                                 {
-                                  track.name
+                                  track.trackName
                                 }
                               </strong>
 
                               <span>
                                 {
-                                  track.artists
-                                    .map(
-                                      artist =>
-                                        artist.name
-                                    )
-                                    .join(', ')
+                                  track.artistName
                                 }
                               </span>
 
@@ -724,16 +575,187 @@ function App() {
 
                     </div>
 
-                  )}
+                  </section>
 
-                </section>
+                )}
 
-              )}
 
-          </>
-        )}
+              {/* EDITOR'S CHOICE */}
 
-    </div>
+              {activeTab ===
+                'editors' && (
+
+                  <section className="tab-page">
+
+                    <div className="section-title">
+                      ♪ EDITOR'S CHOICE ♪
+                    </div>
+
+                    <p className="subtitle">
+                      handpicked tracks from songletter
+                    </p>
+
+                  </section>
+
+                )}
+
+
+              {/* TOP TRACKS */}
+
+              {activeTab ===
+                'topTracks' && (
+
+                  <section className="tab-page">
+
+                    <div className="section-title">
+                      ♪ YOUR TOP TRACKS ♪
+                    </div>
+
+
+                    <div className="time-range-tabs">
+
+                      <button
+                        className={
+                          topTracksRange ===
+                            'short_term'
+                            ? 'active'
+                            : ''
+                        }
+
+                        onClick={() =>
+                          setTopTracksRange(
+                            'short_term'
+                          )
+                        }
+                      >
+                        RECENT
+                      </button>
+
+
+                      <button
+                        className={
+                          topTracksRange ===
+                            'medium_term'
+                            ? 'active'
+                            : ''
+                        }
+
+                        onClick={() =>
+                          setTopTracksRange(
+                            'medium_term'
+                          )
+                        }
+                      >
+                        6 MONTHS
+                      </button>
+
+
+                      <button
+                        className={
+                          topTracksRange ===
+                            'long_term'
+                            ? 'active'
+                            : ''
+                        }
+
+                        onClick={() =>
+                          setTopTracksRange(
+                            'long_term'
+                          )
+                        }
+                      >
+                        LONG TERM
+                      </button>
+
+                    </div>
+
+
+                    {topTracksLoading ? (
+
+                      <p className="top-tracks-loading">
+                        LOADING TRACKS...
+                      </p>
+
+                    ) : (
+
+                      <div className="recommendation-grid">
+
+                        {currentTopTracks.map(
+                          (track, index) => (
+
+                            <a
+                              key={track.id}
+
+                              className="track-card"
+
+                              href={
+                                track
+                                  .external_urls
+                                  .spotify
+                              }
+
+                              target="_blank"
+
+                              rel="noreferrer"
+                            >
+
+                              <div className="track-number">
+                                #{index + 1}
+                              </div>
+
+
+                              <img
+                                src={
+                                  track.album
+                                    .images[0]
+                                    ?.url
+                                }
+
+                                alt={
+                                  track.name
+                                }
+                              />
+
+
+                              <div className="track-info">
+
+                                <strong>
+                                  {
+                                    track.name
+                                  }
+                                </strong>
+
+                                <span>
+                                  {
+                                    track.artists
+                                      .map(
+                                        artist =>
+                                          artist.name
+                                      )
+                                      .join(', ')
+                                  }
+                                </span>
+
+                              </div>
+
+                            </a>
+
+                          )
+                        )}
+
+                      </div>
+
+                    )}
+
+                  </section>
+
+                )}
+
+            </>
+          )}
+
+      </div>
+    </>
   )
 }
 
