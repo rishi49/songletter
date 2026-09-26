@@ -1,200 +1,122 @@
 @import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=VT323&display=swap');
 
+
+/* =========================
+   BASE + WALLPAPER
+   ========================= */
+
+html,
+body,
 #root {
-  min-height: 100vh;
+  min-height: 100%;
 }
 
 body {
+  margin: 0;
+  min-height: 100vh;
+
   background-image: url('./assets/wallpaper.jpg');
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
   background-repeat: no-repeat;
+  background-attachment: fixed;
 }
+
+body::after {
+  content: '';
+
+  position: fixed;
+  inset: 0;
+
+  background-image: url('./assets/wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  filter: grayscale(100%);
+
+  opacity: 1;
+
+  pointer-events: none;
+
+  z-index: 0;
+
+  transition: opacity 7s ease;
+}
+
+#root {
+  position: relative;
+  z-index: 1;
+}
+
+body:has(.page.connected)::after {
+  opacity: 0;
+}
+
+/* =========================
+   PAGE
+   ========================= */
 
 .page {
   width: 760px;
   max-width: 95%;
+
   margin: 30px auto;
-  background: transparent;
-  border: 4px ridge #6666cc;
   padding: 12px;
+
+  background: transparent;
+
+  border: 4px ridge #6666cc;
 }
+
+
+/* =========================
+   HEADER
+   ========================= */
 
 .header {
   text-align: center;
+
   background: #000080;
   color: white;
+
   border: 3px outset #aaa;
+
   padding: 16px;
 }
 
 .header h1 {
+  margin: 0;
+
+  text-align: center;
+
   font-family: 'VT323', monospace;
   font-size: 42px;
   letter-spacing: 3px;
-  margin: 0;
-  text-align: center;
 }
 
 .header p {
   margin-bottom: 0;
+
+  text-align: center;
+
   font-family: 'Space Mono', monospace;
   font-size: 15px;
-  text-align: center;
 }
 
-.spotify-button {
-  display: block;
-  margin: 40px auto;
-  padding: 12px 22px;
-  font-family: Verdana, sans-serif;
-  font-weight: bold;
-  cursor: pointer;
-}
 
-.newsletter {
-  margin-top: 18px;
-  animation: revealNewsletter 0.7s ease-out;
-}
-
-.section-title {
-  font-family: 'VT323', monospace;
-  font-size: 30px;
-  letter-spacing: 2px;
-  text-align: center;
-}
-
-.subtitle {
-  text-align: center;
-  font-family: 'Space Mono', monospace;
-  font-size: 14px;
-  font-style: italic;
-}
-
-.recommendation-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 12px;
-}
-
-.track-card {
-  position: relative;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-
-  padding: 8px;
-
-  color: black;
-  text-decoration: none;
-
-  background: rgba(238, 238, 238, 0.35);
-  backdrop-filter: invert(0);
-
-  transition:
-    background-color 0.25s ease,
-    backdrop-filter 0.25s ease,
-    transform 0.25s ease;
-}
-
-.track-card:hover {
-  background: rgba(255, 255, 255, 0.45);
-  backdrop-filter: invert(1);
-  transform: translateY(-2px);
-}
-
-/* Keep text readable over inverted wallpaper */
-.track-card:hover .track-info,
-.track-card:hover .track-number {
-  text-shadow: 0 0 3px white;
-}
-
-.track-card img {
-  width: 90px;
-  height: 90px;
-  object-fit: cover;
-  border: 2px solid black;
-}
-
-.track-info {
-  display: flex;
-  flex-direction: column;
-  gap: 6px;
-}
-
-.track-info strong {
-  font-size: 14px;
-}
-
-.track-info span {
-  font-size: 12px;
-}
-
-.track-number {
-  position: absolute;
-  top: 2px;
-  right: 5px;
-
-  font-size: 11px;
-  font-weight: bold;
-}
-
-.loading-screen p {
-  width: 380px;
-  max-width: 90%;
-  min-height: 24px;
-
-  text-align: center;
-
-  font-family: 'Space Mono', monospace;
-  font-size: 14px;
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-.loading-star {
-  font-size: 48px;
-  margin-bottom: 20px;
-  animation: pulse 0.8s ease-in-out infinite alternate;
-}
-
-.loading-screen p {
-  font-weight: bold;
-  letter-spacing: 2px;
-}
-
-@keyframes pulse {
-  from {
-    transform: scale(0.8);
-    opacity: 0.4;
-  }
-
-  to {
-    transform: scale(1.2);
-    opacity: 1;
-  }
-}
-
-@keyframes revealNewsletter {
-  from {
-    opacity: 0;
-    transform: translateY(15px);
-  }
-
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
+/* =========================
+   TICKER
+   ========================= */
 
 .ticker {
   margin-top: 8px;
+
   overflow: hidden;
   white-space: nowrap;
 
-  /* Plain white normally */
   background: white;
+
   border: 2px inset #aaa;
 
   transition: background-color 0.3s ease;
@@ -207,6 +129,7 @@ body {
   font-family: 'Space Mono', monospace;
   font-size: 12px;
   font-weight: bold;
+
   color: #000080;
 
   animation: tickerScroll 35s linear infinite;
@@ -214,10 +137,10 @@ body {
 
 .ticker-track span {
   flex-shrink: 0;
+
   padding: 6px 25px;
 }
 
-/* Reveal the wallpaper on hover */
 .ticker:hover {
   background: rgba(255, 255, 255, 0.35);
 }
@@ -232,15 +155,301 @@ body {
   }
 }
 
+
+/* =========================
+   MAIN NAVIGATION
+   ========================= */
+
+.tabs {
+  display: flex;
+  justify-content: center;
+
+  margin-top: 10px;
+}
+
+.tabs button {
+  flex: 1;
+
+  padding: 8px 10px;
+
+  background: #eeeeee;
+
+  border: 3px outset #ccc;
+
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  font-weight: bold;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease;
+}
+
+.tabs button:hover {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.tabs button.active {
+  background: #000080;
+  color: white;
+
+  border-style: inset;
+}
+
+
+/* =========================
+   CONNECT SPOTIFY
+   ========================= */
+
+.connect-screen {
+  min-height: 400px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.spotify-button {
+  display: block;
+
+  padding: 12px 22px;
+
+  font-family: 'Space Mono', monospace;
+  font-weight: bold;
+
+  background: #eeeeee;
+
+  border: 3px outset #ccc;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.spotify-button:hover {
+  background: white;
+
+  transform: translateY(-2px);
+}
+
+.spotify-button:active {
+  border-style: inset;
+
+  transform: translateY(0);
+}
+
+
+/* =========================
+   SECTION TITLES
+   ========================= */
+
+.newsletter {
+  margin-top: 18px;
+
+  animation: revealNewsletter 0.7s ease-out;
+}
+
+.tab-page {
+  margin-top: 18px;
+  min-height: 400px;
+
+  animation: revealNewsletter 0.5s ease-out;
+}
+
+.section-title {
+  text-align: center;
+
+  font-family: 'VT323', monospace;
+  font-size: 30px;
+  letter-spacing: 2px;
+}
+
+.subtitle {
+  text-align: center;
+
+  font-family: 'Space Mono', monospace;
+  font-size: 14px;
+  font-style: italic;
+}
+
+
+/* =========================
+   TOP TRACKS RANGE
+   ========================= */
+
+.time-range-tabs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  gap: 8px;
+
+  margin: 18px auto 22px;
+}
+
+.time-range-tabs button {
+  padding: 7px 16px;
+
+  font-family: 'Space Mono', monospace;
+  font-size: 11px;
+  font-weight: bold;
+
+  color: #000080;
+
+  background: rgba(255, 255, 255, 0.75);
+
+  border: 2px outset #ccc;
+
+  cursor: pointer;
+
+  transition:
+    background-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.time-range-tabs button:hover {
+  background: white;
+
+  transform: translateY(-1px);
+}
+
+.time-range-tabs button.active {
+  color: white;
+
+  background: #000080;
+
+  border-style: inset;
+
+  transform: translateY(0);
+}
+
+.top-tracks-loading {
+  margin-top: 40px;
+
+  text-align: center;
+
+  font-family: 'Space Mono', monospace;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+
+/* =========================
+   TRACK GRID
+   ========================= */
+
+.recommendation-grid {
+  display: grid;
+
+  grid-template-columns: repeat(2, 1fr);
+
+  gap: 12px;
+}
+
+
+/* =========================
+   TRACK CARD
+   ========================= */
+
+.track-card {
+  position: relative;
+
+  display: flex;
+  align-items: center;
+
+  gap: 12px;
+
+  padding: 8px;
+
+  color: black;
+  text-decoration: none;
+
+  background: rgba(238, 238, 238, 0.35);
+
+  backdrop-filter: invert(0);
+
+  transition:
+    background-color 0.25s ease,
+    backdrop-filter 0.25s ease,
+    transform 0.25s ease;
+}
+
+.track-card:hover {
+  background: rgba(255, 255, 255, 0.45);
+
+  backdrop-filter: invert(1);
+
+  transform: translateY(-2px);
+}
+
+.track-card:hover .track-info,
+.track-card:hover .track-number {
+  text-shadow: 0 0 3px white;
+}
+
+.track-card img {
+  width: 90px;
+  height: 90px;
+
+  object-fit: cover;
+
+  border: 2px solid black;
+}
+
+.track-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 6px;
+}
+
+.track-info strong {
+  font-size: 14px;
+}
+
+.track-info span {
+  font-size: 12px;
+}
+
+.track-number {
+  position: absolute;
+
+  top: 2px;
+  right: 5px;
+
+  font-size: 11px;
+  font-weight: bold;
+}
+
+
+/* =========================
+   RECOMMENDATION LOADER
+   ========================= */
+
 .loading-screen {
   min-height: 400px;
 
   display: flex;
   flex-direction: column;
+
   align-items: center;
   justify-content: center;
 
   text-align: center;
+}
+
+.loading-star {
+  margin-bottom: 20px;
+
+  font-size: 48px;
+
+  animation:
+    pulse 0.8s ease-in-out infinite alternate;
 }
 
 .loading-screen p {
@@ -251,9 +460,11 @@ body {
   margin: 15px auto;
 
   text-align: center;
+
   font-family: 'Space Mono', monospace;
   font-size: 14px;
   font-weight: bold;
+
   letter-spacing: 2px;
 }
 
@@ -263,17 +474,59 @@ body {
 
   margin: 15px auto 0;
 
-  background: white;
-  border: 3px inset #aaa;
   padding: 2px;
+
+  background: white;
+
+  border: 3px inset #aaa;
 }
 
 .loading-bar-fill {
-  height: 100%;
   width: 0;
+  height: 100%;
+
   background: #000080;
 
-  animation: fakeProgress 10s ease-out forwards;
+  animation:
+    fakeProgress 10s ease-out forwards;
+}
+
+
+/* =========================
+   POPUP CALLBACK
+   ========================= */
+
+.popup-callback {
+  min-height: 100vh;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  color: white;
+  background: #000080;
+
+  font-family: 'Space Mono', monospace;
+  font-size: 13px;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
+
+
+/* =========================
+   ANIMATIONS
+   ========================= */
+
+@keyframes pulse {
+  from {
+    transform: scale(0.8);
+    opacity: 0.4;
+  }
+
+  to {
+    transform: scale(1.2);
+    opacity: 1;
+  }
 }
 
 @keyframes fakeProgress {
@@ -299,5 +552,19 @@ body {
 
   100% {
     width: 90%;
+  }
+}
+
+@keyframes revealNewsletter {
+  from {
+    opacity: 0;
+
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+
+    transform: translateY(0);
   }
 }
