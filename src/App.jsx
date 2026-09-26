@@ -14,6 +14,7 @@ import {
 
 import candidateProfiles from './data/candidateProfiles.json'
 import { rankCandidates } from './recommendation'
+import editorsChoice from './data/editorsChoice.json'
 
 import wallpaperRecommendations from './assets/wallpaper.jpg'
 import wallpaperEditors from './assets/wallpaper4.jpg'
@@ -65,6 +66,7 @@ function App() {
 
   const [previousWallpaper, setPreviousWallpaper] =
     useState(null)
+
 
   const loadingMessages = [
     'READING YOUR LISTENING HISTORY...',
@@ -220,7 +222,6 @@ function App() {
             await getAccessToken(
               event.data.code
             )
-
 
           setAccessToken(token)
 
@@ -642,6 +643,67 @@ function App() {
                     <p className="subtitle">
                       handpicked tracks from the songletter team :)
                     </p>
+
+
+                    <div className="recommendation-grid">
+
+                      {editorsChoice.map(
+                        (track, index) => (
+
+                          <a
+                            key={
+                              track.spotifyTrackId
+                            }
+
+                            className="track-card"
+
+                            href={
+                              track.spotifyUrl
+                            }
+
+                            target="_blank"
+
+                            rel="noreferrer"
+                          >
+
+                            <div className="track-number">
+                              #{index + 1}
+                            </div>
+
+
+                            <img
+                              src={
+                                track.imageUrl
+                              }
+
+                              alt={
+                                track.trackName
+                              }
+                            />
+
+
+                            <div className="track-info">
+
+                              <strong>
+                                {
+                                  track.trackName
+                                }
+                              </strong>
+
+                              <span>
+                                {
+                                  track.artistName
+                                }
+                              </span>
+
+                            </div>
+
+                          </a>
+
+                        )
+                      )}
+
+                    </div>
 
                   </section>
 
