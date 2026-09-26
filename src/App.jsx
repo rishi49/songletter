@@ -21,6 +21,14 @@ import wallpaperTopTracks from './assets/wallpaper3.jpg'
 import wallpaperMyMusic from './assets/wallpaper5.jpeg'
 
 
+const wallpapers = {
+  recommendations: wallpaperRecommendations,
+  editors: wallpaperEditors,
+  topTracks: wallpaperTopTracks,
+  myMusic: wallpaperMyMusic
+}
+
+
 function App() {
   const [artists, setArtists] = useState([])
   const [recommendations, setRecommendations] = useState([])
@@ -48,6 +56,16 @@ function App() {
     useState(false)
 
 
+  /*
+    WALLPAPER CROSSFADE
+  */
+
+  const [displayedWallpaper, setDisplayedWallpaper] =
+    useState(wallpapers.recommendations)
+
+  const [previousWallpaper, setPreviousWallpaper] =
+    useState(null)
+
   const loadingMessages = [
     'READING YOUR LISTENING HISTORY...',
     'FIGURING OUT YOUR TASTE...',
@@ -55,12 +73,28 @@ function App() {
     'MAKING YOUR SONGLETTER...'
   ]
 
-  const wallpapers = {
-    recommendations: wallpaperRecommendations,
-    editors: wallpaperEditors,
-    topTracks: wallpaperTopTracks,
-    myMusic: wallpaperMyMusic
-  }
+
+  /*
+    WALLPAPER CHANGE
+  */
+
+  useEffect(() => {
+    const nextWallpaper = wallpapers[activeTab]
+
+    if (nextWallpaper === displayedWallpaper) {
+      return
+    }
+
+    setPreviousWallpaper(displayedWallpaper)
+    setDisplayedWallpaper(nextWallpaper)
+
+    const timeout = setTimeout(() => {
+      setPreviousWallpaper(null)
+    }, 1200)
+
+    return () => clearTimeout(timeout)
+
+  }, [activeTab])
 
 
   /*
@@ -187,11 +221,6 @@ function App() {
               event.data.code
             )
 
-
-          /*
-            This triggers the wallpaper
-            colour transition.
-          */
 
           setAccessToken(token)
 
@@ -333,15 +362,33 @@ function App() {
 
   return (
     <>
-      <div
-        className="wallpaper"
-        style={{
-          backgroundImage: `url(${wallpapers[activeTab]})`
-        }}
-      />
+
+      {/* WALLPAPER CROSSFADE */}
+
+      <div className="wallpaper-container">
+
+        {/* NEW wallpaper underneath */}
+        <div
+          className="wallpaper"
+          style={{
+            backgroundImage: `url(${displayedWallpaper})`
+          }}
+        />
+
+        {/* OLD wallpaper fades away */}
+        {previousWallpaper && (
+          <div
+            className="wallpaper wallpaper-previous"
+            style={{
+              backgroundImage: `url(${previousWallpaper})`
+            }}
+          />
+        )}
+
+      </div>
+
 
       <div className="page">
-        {/* rest of Songletter */}
 
 
         {/* HEADER */}
@@ -405,6 +452,7 @@ function App() {
           >
             EDITOR'S CHOICE
           </button>
+
 
           <button
             className={
@@ -592,7 +640,7 @@ function App() {
                     </div>
 
                     <p className="subtitle">
-                      handpicked tracks from songletter
+                      handpicked tracks from the songletter team :)
                     </p>
 
                   </section>
@@ -755,6 +803,7 @@ function App() {
           )}
 
       </div>
+
     </>
   )
 }
