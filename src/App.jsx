@@ -320,7 +320,7 @@ function App() {
 
 
   return (
-    <div className={accessToken ? 'page connected' : 'page'}>
+    <div className="page">
 
 
       {/* HEADER */}

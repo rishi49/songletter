@@ -22,37 +22,6 @@ body {
   background-attachment: fixed;
 }
 
-body::after {
-  content: '';
-
-  position: fixed;
-  inset: 0;
-
-  background-image: url('./assets/wallpaper.jpg');
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-
-  filter: grayscale(100%);
-
-  opacity: 1;
-
-  pointer-events: none;
-
-  z-index: 0;
-
-  transition: opacity 7s ease;
-}
-
-#root {
-  position: relative;
-  z-index: 1;
-}
-
-body:has(.page.connected)::after {
-  opacity: 0;
-}
-
 /* =========================
    PAGE
    ========================= */
