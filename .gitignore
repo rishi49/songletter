@@ -34,5 +34,3 @@ dist/
 .DS_Store
 
 /src/data/dump/
-/src/assets
-/src/data
