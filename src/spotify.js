@@ -1,5 +1,7 @@
 const CLIENT_ID = import.meta.env.VITE_SPOTIFY_CLIENT_ID
-const REDIRECT_URI = 'http://127.0.0.1:5173/callback'
+const REDIRECT_URI = import.meta.env.DEV
+  ? 'http://127.0.0.1:5173/callback'
+  : 'https://rishi49.github.io/songletter/callback'
 
 
 function generateRandomString(length) {
